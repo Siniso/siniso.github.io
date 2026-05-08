@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siniso | Vanguard MAS</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .terminal {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            padding: 2.5rem;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            text-align: left;
+            min-width: 320px;
+        }
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.1em;
+            background-color: #58a6ff;
+            vertical-align: text-bottom;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        h1 { 
+            color: #58a6ff; 
+            font-size: 1.5rem; 
+            margin-top: 0; 
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        p { 
+            margin: 0.75rem 0; 
+            font-size: 0.95rem; 
+        }
+        .status-ok { 
+            color: #3fb950; 
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <h1>Siniso_</h1>
+        <p>> Root domain routing........ <span class="status-ok">[OK]</span></p>
+        <p>> Enterprise namespace....... <span class="status-ok">[VERIFIED]</span></p>
+        <p>> Vanguard MAS status........ [AWAITING_DEPLOYMENT]</p>
+        <br>
+        <p>> <span class="cursor"></span></p>
+    </div>
+</body>
+</html>
